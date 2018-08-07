@@ -94,6 +94,14 @@
     
 
 
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#AcousticPulserecognitionTouchScreen -->
+
+    <owl:Class rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#AcousticPulserecognitionTouchScreen">
+        <rdfs:subClassOf rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#TouchScreen"/>
+    </owl:Class>
+    
+
+
     <!-- https://www.gsmarena.com/ontologies/mobile.owl#AcousticWaveTouchScreen -->
 
     <owl:Class rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#AcousticWaveTouchScreen">
