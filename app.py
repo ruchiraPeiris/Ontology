@@ -27,7 +27,59 @@ def search():
         return render_template('wim_phone.html')
 
 
+@app.route('/query1', methods=['GET'])
+def search1():
+    try:
+        user_name = request.form['username']
+        brand_name = request.form['brandname']
+        os = request.form['os']
+
+        return render_template('result1.html', name=user_name)
+    except:
+        return render_template('input_form1.html')
+
+
+@app.route('/query2', methods=['GET'])
+def search2():
+    try:
+        user_name = request.form['username']
+        brand_name = request.form['brandname']
+        os = request.form['os']
+
+        return render_template('result2.html', name=user_name)
+    except:
+        return render_template('input_form2.html')
+
+
+@app.route('/query3', methods=['GET'])
+def search3():
+    try:
+        user_name = request.form['username']
+        brand_name = request.form['brandname']
+        os = request.form['os']
+
+        return render_template('result3.html', name=user_name)
+    except:
+        return render_template('input_form3.html')
+
+
+@app.route('/query4', methods=['GET'])
+def search1():
+    try:
+        user_name = request.form['username']
+        brand_name = request.form['brandname']
+        os = request.form['os']
+
+        return render_template('result4.html', name=user_name)
+    except:
+        return render_template('input_form4.html')
+
+
 app.add_url_rule('/find_phone', 'search', search, methods=['GET', 'POST'])
+app.add_url_rule('/query1', 'search1', search, methods=['GET', 'POST'])
+app.add_url_rule('/query2', 'search2', search, methods=['GET', 'POST'])
+app.add_url_rule('/query3', 'search3', search, methods=['GET', 'POST'])
+app.add_url_rule('/query4', 'search4', search, methods=['GET', 'POST'])
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=4000)
