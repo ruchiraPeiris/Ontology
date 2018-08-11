@@ -1,6 +1,19 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+<<<<<<< HEAD
         <uri id="Automatically generated entry, Timestamp=1533971582206" name="https://www.gsmarena.com/ontologies/mobile.owl" uri="Mobile.owl"/>
+=======
+        <uri id="Automatically generated entry, Timestamp=1533975161528" name="https://www.gsmarena.com/ontologies/mobile.owl" uri="Mobile.owl"/>
+>>>>>>> bb64d3b18cc3516aa8dfdbe9a59491442a2f6a87
     </group>
 </catalog>
+=======
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1533924125615" name="https://www.gsmarena.com/ontologies/mobile.owl" uri="Mobile.owl"/>
+    </group>
+</catalog>
+>>>>>>> 0b2b00053e0094bf7c8d1b9ee8c3a12bfaf2adb0

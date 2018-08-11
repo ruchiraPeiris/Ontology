@@ -1,0 +1,89 @@
+<link rel="stylesheet" href="/static/css/forms.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% extends 'layout.html' %}
+{% include 'navigation_bar.html' %}
+
+{% block body %}
+
+{#    <br/>#}
+{##}
+{#    <form id="display_selection" action="/search" method="GET">#}
+{#        <lable>User Name:</lable>#}
+{#        <input type="text" name="uname"/>#}
+{##}
+{#        <lable>Brand:</lable>#}
+{#        <input type="text" name="brand"/>#}
+{##}
+{#        <lable>Enter Email ID:</lable>#}
+{#        <input id="usr_email" type="text" name="email">#}
+{#        <input id="submit_button" type="submit">#}
+{##}
+{#    </form>#}
+{#<form action="find_phone" method="POST">#}
+{#	<div class="login">#}
+{#		<div class="login-screen">#}
+{#			<div class="app-title">#}
+{#				<h1>Find My Phone</h1>#}
+{#			</div>#}
+{##}
+{#			<div class="login-form">#}
+{#				<div class="control-group">#}
+{#               	<input type="text" class="login-field" value="" placeholder="username" name="username">#}
+{#				<label class="login-field-icon fui-user" for="username"></label>#}
+{#				</div>#}
+{##}
+{#				<div class="control-group">#}
+{#				<input type="text" class="login-field" value="" placeholder="brand name" name="brandname">#}
+{#				<label class="login-field-icon fui-lock" for="brandname"></label>#}
+{#				</div>#}
+{##}
+{#                <div class="control-group">#}
+{#				<input type="text" class="login-field" value="" placeholder="OS" name="os">#}
+{#				<label class="login-field-icon fui-user" for="os"></label>#}
+{#				</div>#}
+{##}
+{#                <input type="submit" value="Log in" class="btn btn-primary btn-large btn-block" >#}
+{#			    <br>#}
+{#			</div>#}
+{#		</div>#}
+{#	</div>#}
+{#</form>#}
+
+
+<h1>Find My Phone</h1>
+
+<div class="container">
+  <form action="find_phone" method="POST">
+    <label for="fname">Name</label>
+    <input type="text" id="username" name="username" placeholder="Your name..">
+
+    <label for="bname">Brand Name</label>
+    <input type="text" id="brandname" name="brandname" placeholder="Your preferred brand">
+
+    <label for="os">Operating System</label>
+    <select id="os" name="os">
+      <option value="android">Android</option>
+      <option value="ios">IOS</option>
+      <option value="windows">Windows</option>
+    </select>
+      <br/><br/>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+
+<br/><br/>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        var sPath = window.location.pathname;
+        var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
+        $('a[href="'+ sPage +'"]').parent().addClass('active');
+    });
+</script>
+
+
+{% endblock %}
+
+
