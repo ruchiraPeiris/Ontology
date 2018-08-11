@@ -8,7 +8,7 @@
 <h1>Find My Phone</h1>
 
 <div class="container">
-  <form action="find_phone" method="POST">
+  <form action="query1" method="POST">
     <label for="fname">Name</label>
     <input type="text" id="username" name="username" placeholder="Your name..">
 
@@ -28,6 +28,14 @@
 
 
 <br/><br/>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        var sPath = window.location.pathname;
+        var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
+        $('a[href="'+ sPage +'"]').parent().addClass('active');
+    });
+</script>
 
 {% endblock %}
 

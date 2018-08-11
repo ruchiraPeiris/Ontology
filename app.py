@@ -64,7 +64,7 @@ def search3():
 
 
 @app.route('/query4', methods=['GET'])
-def search1():
+def search4():
     try:
         user_name = request.form['username']
         brand_name = request.form['brandname']
@@ -76,10 +76,10 @@ def search1():
 
 
 app.add_url_rule('/find_phone', 'search', search, methods=['GET', 'POST'])
-app.add_url_rule('/query1', 'search1', search, methods=['GET', 'POST'])
-app.add_url_rule('/query2', 'search2', search, methods=['GET', 'POST'])
-app.add_url_rule('/query3', 'search3', search, methods=['GET', 'POST'])
-app.add_url_rule('/query4', 'search4', search, methods=['GET', 'POST'])
+app.add_url_rule('/query1', 'search1', search1, methods=['GET', 'POST'])
+app.add_url_rule('/query2', 'search2', search2, methods=['GET', 'POST'])
+app.add_url_rule('/query3', 'search3', search3, methods=['GET', 'POST'])
+app.add_url_rule('/query4', 'search4', search4, methods=['GET', 'POST'])
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=4000)
