@@ -5,6 +5,7 @@ root_path = os.path.normpath(os.getcwd() + os.sep + os.pardir)
 os.chdir(root_path)
 
 onto_path.append(root_path)
+print(root_path)
 onto = get_ontology('file:../MobileOX.owl').load()
 # onto = get_ontology('https://www.gsmarena.com/ontologies/MobileOX.owl')
 
@@ -15,4 +16,3 @@ print("Instances :", onto.instances)
 print("Properties :", onto.properties)
 print("Annotation properties :", onto.annotation_properties)
 print("Disjoints :", onto.all_disjoints)
-
