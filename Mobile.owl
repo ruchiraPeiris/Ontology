@@ -70,6 +70,29 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Age -->
+
+    <owl:DatatypeProperty rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Age"/>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Price -->
+
+    <owl:DatatypeProperty rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Price"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -194,6 +217,12 @@
 
     <owl:Class rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#CellPhone">
         <rdfs:subClassOf rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Mobile"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#isUsedBy"/>
+                <owl:allValuesFrom rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Old"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -570,6 +599,19 @@
 
     <owl:Class rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#SmartPhone">
         <rdfs:subClassOf rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Mobile"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#BlackberryOS"/>
+                    <rdf:Description rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Ios"/>
+                    <rdf:Description rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Windows"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#hasOS"/>
+                        <owl:someValuesFrom rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Android"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -719,6 +761,124 @@
     <owl:Class rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#7.1">
         <rdfs:subClassOf rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#BlackberryOS"/>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Aurora -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Aurora">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Blackberry"/>
+        <Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29700</Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Desire_828 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Desire_828">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#HTC"/>
+        <Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21000</Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#GR5 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#GR5">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Huawei"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Galaxy_Note_8 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Galaxy_Note_8">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Samsung"/>
+        <Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">92000</Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#IphoneX -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#IphoneX">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Apple"/>
+        <Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">160000</Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Lumia_950 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Lumia_950">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Microsoft"/>
+        <Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45000</Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Nokia6 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Nokia6">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Nokia"/>
+        <Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30000</Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Nokia_130 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Nokia_130">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Nokia"/>
+        <Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3900</Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Note5 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Note5">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Xiaomi"/>
+        <Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33000</Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Nova_2i -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Nova_2i">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Huawei"/>
+        <Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">36300</Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Pixel_2 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Pixel_2">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Google"/>
+        <Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128000</Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Xperia_XZ1 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Xperia_XZ1">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Sony"/>
+        <Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">67900</Price>
+    </owl:NamedIndividual>
     
 
 
