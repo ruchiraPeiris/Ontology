@@ -1,0 +1,250 @@
+.navbar{
+    background-color: #ffff00;
+    background : #00000f;
+    border-bottom: solid;
+    border-bottom-color: #ff820e;
+    height: 60px;
+}
+
+#content{
+    margin-bottom: 50px;
+}
+
+hr {
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 130, 14, 0.75   ), rgba(0, 0, 0, 0));
+}
+
+.res-div{
+    overflow-x:auto;
+}
+
+p, h1, h2, h3, h4, h5, h6, .break-line{
+    /*word-break: break-all;*/
+    white-space: pre-line;
+
+  /* Careful, this breaks the word wherever it is without a hyphen */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    /* Adds a hyphen where the word breaks */
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+
+
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+footer{
+    border-top: solid;
+    border-top-color: #ff820e;
+
+    position: absolute;
+    min-height: 2px;
+    width:100%;
+    bottom: 0;
+
+    text-align: center;
+    background-color: #00000f;
+    color: #9d9d9d;
+}
+
+
+hr.line{
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: #999;
+}
+
+.btn-submit{
+    width: 190px;
+    margin-bottom: 5px;
+}
+
+.href-row:hover{
+    cursor: pointer;
+}
+
+.panel-default{
+    border: solid 1px;
+    border-color: #9e9e9e;
+}
+
+
+#system_status {
+    color: #398439;
+}
+
+#training {
+    background-color: #e3e3e3;
+}
+
+#navbar_links {
+    position: absolute;
+    top: 10px;
+    right: 70px;
+    color: white;
+}
+
+.alpha_adjust input{
+    display: inline;
+    margin-left: 10px;
+}
+
+#alpha_block {
+    background-color: #dbdbdb;
+    width: 400px;
+    margin:auto;
+}
+
+table.topper {
+	table-layout:fixed;
+	width: 100%;
+    font-family: arial, sans-serif;
+    font-size: 24px;
+
+}
+
+table.topper td:first-child, table.topper th:first-child {width: 12%;}
+table.topper td:nth-child(2),table.topper th:nth-child(2) {
+    width: 76%;
+	margin-left:0px;
+    margin-right:auto;
+    }
+table.topper td:nth-child(3),table.topper th:nth-child(3) {
+    width: 12%;
+	margin-left:auto;
+    margin-right:0px;
+    }
+
+table.topper td {border: 0px solid #000000; }
+
+.logoutLblPos{
+    padding: 10px 30px 10px 30px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    float: right;
+}
+
+.loginLblPos{
+    padding: 8px 24px 8px 24px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    float: right;
+}
+
+.image-left {
+    background-position: 0.833em center; /* 10/12 */
+    padding-left: 3em; /* 36/12 */
+}
+
+.image-right {
+    background-position: right center;
+    display: inline-block;
+    padding-right: 8em; /* 36/12 */
+}
+
+.menu-logoff {
+    background-image: url("../images/menu-logoff.png");
+}
+
+.menu-login {
+    background-image: url("../images/ic_right.png");
+}
+
+.menu-logoff:hover {
+    background-image: url("../images/menu-logoff-over.png");
+}
+
+.dark {
+    background-color: #3f4551;
+    color: white;
+}
+
+.dark:hover {
+    background-color: #5d6677;
+    color: white;
+}
+
+ul.new-menu {
+    list-style-type: none;
+    font-size: 0.75em;
+    font-family: arial, sans-serif;
+}
+
+li.new-menu {
+    float: left;
+}
+
+li.new-menu a, .dropbtn {
+    border: 1px solid #eeefef;
+    border-bottom: none;
+    padding: 1.0em 3.833em; /* 20/12 10/12 */
+    margin: -22 0.416em 21px 0;
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+li.new-menu a:hover, li.new-menu .dropdown:hover .dropbtn {
+     color: #000000;
+     background-color: #eeefef;
+}
+
+li.new-menu .dropdown {
+    display: inline-block;
+}
+
+li.new-menu a.dashboard-tab {
+    background: transparent url('../images/tab-dashboard.png') no-repeat 0.833em center /* 10/12 */;
+    padding-left: 3em; /* 36/12 */
+}
+
+li.new-menu a.active-tab, li.new-menu a.active-tab:hover {
+    background-color: #fcfc45;
+    font-weight: bold;
+    color: #2a2e36;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+
+li.new-menu .dropdown-content a {
+    color: black;
+    padding: 12px 57px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+div#header-with-tabs {
+    padding: 1.25em 0 0 0; /* 20/16 */
+    background-color: #006d82;
+    height : 30px;
+
+}
+
+
+
+
