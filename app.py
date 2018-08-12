@@ -1,4 +1,5 @@
 from flask import Flask, flash, redirect, render_template, request, session, abort
+from OWL_Ready.owl_manager import *
 
 app = Flask(__name__)
 
@@ -82,4 +83,4 @@ app.add_url_rule('/query3', 'search3', search3, methods=['GET', 'POST'])
 app.add_url_rule('/query4', 'search4', search4, methods=['GET', 'POST'])
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=4000)
+    app.run(host='localhost', port=9800)
