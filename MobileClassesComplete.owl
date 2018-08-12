@@ -132,6 +132,15 @@
     
 
 
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#hasAge -->
+
+    <owl:DatatypeProperty rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#hasAge">
+        <rdfs:domain rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Users"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://www.gsmarena.com/ontologies/mobile.owl#hasPrice -->
 
     <owl:DatatypeProperty rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#hasPrice">
@@ -414,6 +423,34 @@
     
 
 
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#GR5 -->
+
+    <owl:Class rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#GR5">
+        <rdfs:subClassOf rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#SmartPhone"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#hasColor"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Gray"/>
+                            <rdf:Description rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Silver"/>
+                            <rdf:Description rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#White"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#hasDisplay"/>
+                <owl:someValuesFrom rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#IPS-LCD"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- https://www.gsmarena.com/ontologies/mobile.owl#Galaxy_Note9 -->
 
     <owl:Class rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Galaxy_Note9">
@@ -440,6 +477,14 @@
 
     <owl:Class rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Google">
         <rdfs:subClassOf rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Brand"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Gray -->
+
+    <owl:Class rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Gray">
+        <rdfs:subClassOf rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Body_Colors"/>
     </owl:Class>
     
 
@@ -680,6 +725,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#hasBrand"/>
                 <owl:someValuesFrom rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Microsoft"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#hasOS"/>
+                <owl:allValuesFrom rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Windows"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1290,11 +1341,28 @@
     
 
 
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Ruchira -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Ruchira">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Adults"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</hasAge>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://www.gsmarena.com/ontologies/mobile.owl#Arshad&apos;s_phone -->
 
     <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Arshad&apos;s_phone">
         <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#iPhone_X"/>
         <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150000</hasPrice>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Ruchira&apos;s_Phone -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Ruchira&apos;s_Phone">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#GR5"/>
     </owl:NamedIndividual>
     
 
