@@ -1,0 +1,1274 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://www.gsmarena.com/ontologies/mobile.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://www.gsmarena.com/ontologies/mobile.owl">
+    <Prefix name="" IRI="https://www.gsmarena.com/ontologies/mobile.owl"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <ObjectProperty IRI="#hasOS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nougat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AcousticWaveTouchScreen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arshad"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LG"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Donut"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#compass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Children"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Micromax"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ios5"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Accelerometer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lollipop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Honeycomb"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Xperia_XA2_Plus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Huawei"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lumia_650"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TouchScreen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Froyo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ios11"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFeatures"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#iPhone_X"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SmartPhone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OLED"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cool_Black"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#3.6"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ios4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#5.0"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResistiveTouchScreen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AcousticPulserecognitionTouchScreen"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LCD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ios10"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ice_cream_sandwich"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Space_Grey"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Jelly_Bean"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Motorola"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#6.0"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Qualcomm_SDM630_Snapdragon_630"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ios3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Oppo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#uses"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Galaxy_Note9"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lenovo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasColor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mobile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Desire_12"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasChipset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Old"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Adults"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CapacitiveTouchScreen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ios2"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDisplay"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AMOLED"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSensors"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Q8"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pixel_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Qualcomm_SDM845_Snapdragon_845"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#proximity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mediatek_MT6739"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ios"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Windows_phone7.8"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Zenfone_5"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KitKat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Face_Id"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTouchscreen"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBrandOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Brand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Windows_phone7"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ios1"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPrice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arshad&apos;s_phone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#A5"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ios9"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mediatek_MT6737M"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Android"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FaceIDPhone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Marshmallow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mediatek_MT6739wa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Warm_Silver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#barometer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Qualcomm_MSM8998_Snapdragon_835"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Eclair"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Iconia_Talk_S"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Users"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#gyro"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Evolve_X"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#1.0"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Windows_phone8"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ios8"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BlackberryOS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fingerprint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Microsoft"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PressureSensorTouchScreen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InfraredTouchScreen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hisilicon_Kirin_970"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Oreo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#7.1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Windows_phone7.5"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBrand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Acer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bharat_Go"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Samsung"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ios7"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Teenagers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#White"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blackberry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IPS-LCD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Smart_N9"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CellPhone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Asus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Display"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chipset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HTC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#7.0"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Z5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GR5"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ios6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ruchira"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Windows_phone8.1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Honor_Note_10"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Moto_Z3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Silver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vodafone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Apple"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nokia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Google"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Body_Colors"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mi_A2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Windows_phone10"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#6.1_Plus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gingerbread"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Windows"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#A11_Bionic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Xiaomi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sony"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#A11_Bionic"/>
+        <Class IRI="#Chipset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A5"/>
+        <Class IRI="#SmartPhone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A5"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBrand"/>
+            <Class IRI="#Oppo"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AMOLED"/>
+        <Class IRI="#Display"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Accelerometer"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Acer"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AcousticPulserecognitionTouchScreen"/>
+        <Class IRI="#TouchScreen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AcousticWaveTouchScreen"/>
+        <Class IRI="#TouchScreen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Adults"/>
+        <Class IRI="#Users"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Android"/>
+        <Class IRI="#OS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Apple"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Asus"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bharat_Go"/>
+        <Class IRI="#SmartPhone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bharat_Go"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBrand"/>
+            <Class IRI="#Micromax"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Blackberry"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BlackberryOS"/>
+        <Class IRI="#OS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CapacitiveTouchScreen"/>
+        <Class IRI="#TouchScreen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CellPhone"/>
+        <Class IRI="#Mobile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Children"/>
+        <Class IRI="#Users"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cool_Black"/>
+        <Class IRI="#Body_Colors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Desire_12"/>
+        <Class IRI="#SmartPhone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Desire_12"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBrand"/>
+            <Class IRI="#HTC"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Donut"/>
+        <Class IRI="#Android"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Eclair"/>
+        <Class IRI="#Android"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Evolve_X"/>
+        <Class IRI="#SmartPhone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Evolve_X"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBrand"/>
+            <Class IRI="#Blackberry"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FaceIDPhone"/>
+        <Class IRI="#Mobile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FaceIDPhone"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSensors"/>
+            <Class IRI="#Face_Id"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Face_Id"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fingerprint"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Froyo"/>
+        <Class IRI="#Android"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Galaxy_Note9"/>
+        <Class IRI="#SmartPhone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Galaxy_Note9"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBrand"/>
+            <Class IRI="#Samsung"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gingerbread"/>
+        <Class IRI="#Android"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Google"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HTC"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hisilicon_Kirin_970"/>
+        <Class IRI="#Chipset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Honeycomb"/>
+        <Class IRI="#Android"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Honor_Note_10"/>
+        <Class IRI="#SmartPhone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Honor_Note_10"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBrand"/>
+            <Class IRI="#Huawei"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Huawei"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IPS-LCD"/>
+        <Class IRI="#Display"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ice_cream_sandwich"/>
+        <Class IRI="#Android"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Iconia_Talk_S"/>
+        <Class IRI="#SmartPhone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Iconia_Talk_S"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBrand"/>
+            <Class IRI="#Acer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InfraredTouchScreen"/>
+        <Class IRI="#TouchScreen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ios"/>
+        <Class IRI="#OS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ios1"/>
+        <Class IRI="#Ios"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ios10"/>
+        <Class IRI="#Ios"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ios11"/>
+        <Class IRI="#Ios"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ios2"/>
+        <Class IRI="#Ios"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ios3"/>
+        <Class IRI="#Ios"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ios4"/>
+        <Class IRI="#Ios"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ios5"/>
+        <Class IRI="#Ios"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ios6"/>
+        <Class IRI="#Ios"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ios7"/>
+        <Class IRI="#Ios"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ios8"/>
+        <Class IRI="#Ios"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ios9"/>
+        <Class IRI="#Ios"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Jelly_Bean"/>
+        <Class IRI="#Android"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KitKat"/>
+        <Class IRI="#Android"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LCD"/>
+        <Class IRI="#Display"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LG"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lenovo"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lollipop"/>
+        <Class IRI="#Android"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lumia_650"/>
+        <Class IRI="#SmartPhone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lumia_650"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBrand"/>
+            <Class IRI="#Microsoft"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Marshmallow"/>
+        <Class IRI="#Android"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mediatek_MT6737M"/>
+        <Class IRI="#Chipset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mediatek_MT6739"/>
+        <Class IRI="#Chipset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mediatek_MT6739wa"/>
+        <Class IRI="#Chipset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mi_A2"/>
+        <Class IRI="#SmartPhone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mi_A2"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBrand"/>
+            <Class IRI="#Xiaomi"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Micromax"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Microsoft"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moto_Z3"/>
+        <Class IRI="#SmartPhone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moto_Z3"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBrand"/>
+            <Class IRI="#Motorola"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motorola"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nokia"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nougat"/>
+        <Class IRI="#Android"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OLED"/>
+        <Class IRI="#Display"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Old"/>
+        <Class IRI="#Users"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oppo"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oreo"/>
+        <Class IRI="#Android"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pixel_2"/>
+        <Class IRI="#SmartPhone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pixel_2"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBrand"/>
+            <Class IRI="#Google"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PressureSensorTouchScreen"/>
+        <Class IRI="#TouchScreen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Q8"/>
+        <Class IRI="#SmartPhone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Q8"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBrand"/>
+            <Class IRI="#LG"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Qualcomm_MSM8998_Snapdragon_835"/>
+        <Class IRI="#Chipset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Qualcomm_SDM630_Snapdragon_630"/>
+        <Class IRI="#Chipset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Qualcomm_SDM845_Snapdragon_845"/>
+        <Class IRI="#Chipset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResistiveTouchScreen"/>
+        <Class IRI="#TouchScreen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Samsung"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Silver"/>
+        <Class IRI="#Body_Colors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SmartPhone"/>
+        <Class IRI="#Mobile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Smart_N9"/>
+        <Class IRI="#SmartPhone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Smart_N9"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBrand"/>
+            <Class IRI="#Vodafone"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sony"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Space_Grey"/>
+        <Class IRI="#Body_Colors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Teenagers"/>
+        <Class IRI="#Users"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vodafone"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Warm_Silver"/>
+        <Class IRI="#Body_Colors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#White"/>
+        <Class IRI="#Body_Colors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Windows"/>
+        <Class IRI="#OS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Windows_phone10"/>
+        <Class IRI="#Windows"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Windows_phone7"/>
+        <Class IRI="#Windows"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Windows_phone7.5"/>
+        <Class IRI="#Windows"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Windows_phone7.8"/>
+        <Class IRI="#Windows"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Windows_phone8"/>
+        <Class IRI="#Windows"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Windows_phone8.1"/>
+        <Class IRI="#Windows"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Xiaomi"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Xperia_XA2_Plus"/>
+        <Class IRI="#SmartPhone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Xperia_XA2_Plus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBrand"/>
+            <Class IRI="#Sony"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Z5"/>
+        <Class IRI="#SmartPhone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Z5"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBrand"/>
+            <Class IRI="#Lenovo"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Zenfone_5"/>
+        <Class IRI="#SmartPhone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Zenfone_5"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBrand"/>
+            <Class IRI="#Asus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#barometer"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#compass"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#gyro"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#iPhone_X"/>
+        <Class IRI="#SmartPhone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#iPhone_X"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBrand"/>
+            <Class IRI="#Apple"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#iPhone_X"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasChipset"/>
+            <Class IRI="#A11_Bionic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#iPhone_X"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasColor"/>
+            <ObjectUnionOf>
+                <Class IRI="#Silver"/>
+                <Class IRI="#Space_Grey"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#iPhone_X"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasDisplay"/>
+            <Class IRI="#AMOLED"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#iPhone_X"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasOS"/>
+            <Class IRI="#Ios11"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#iPhone_X"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSensors"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#Accelerometer"/>
+                <Class IRI="#Face_Id"/>
+                <Class IRI="#barometer"/>
+                <Class IRI="#compass"/>
+                <Class IRI="#gyro"/>
+                <Class IRI="#proximity"/>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#iPhone_X"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTouchscreen"/>
+            <Class IRI="#CapacitiveTouchScreen"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#proximity"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#1.0"/>
+        <Class IRI="#BlackberryOS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#3.6"/>
+        <Class IRI="#BlackberryOS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#5.0"/>
+        <Class IRI="#BlackberryOS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#6.0"/>
+        <Class IRI="#BlackberryOS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#6.1_Plus"/>
+        <Class IRI="#SmartPhone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#6.1_Plus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBrand"/>
+            <Class IRI="#Nokia"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#7.0"/>
+        <Class IRI="#BlackberryOS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#7.1"/>
+        <Class IRI="#BlackberryOS"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#A11_Bionic"/>
+        <Class IRI="#Hisilicon_Kirin_970"/>
+        <Class IRI="#Mediatek_MT6737M"/>
+        <Class IRI="#Mediatek_MT6739"/>
+        <Class IRI="#Mediatek_MT6739wa"/>
+        <Class IRI="#Qualcomm_MSM8998_Snapdragon_835"/>
+        <Class IRI="#Qualcomm_SDM630_Snapdragon_630"/>
+        <Class IRI="#Qualcomm_SDM845_Snapdragon_845"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AcousticWaveTouchScreen"/>
+        <Class IRI="#CapacitiveTouchScreen"/>
+        <Class IRI="#InfraredTouchScreen"/>
+        <Class IRI="#PressureSensorTouchScreen"/>
+        <Class IRI="#ResistiveTouchScreen"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Body_Colors"/>
+        <Class IRI="#Brand"/>
+        <Class IRI="#Chipset"/>
+        <Class IRI="#Display"/>
+        <Class IRI="#Mobile"/>
+        <Class IRI="#OS"/>
+        <Class IRI="#Sensor"/>
+        <Class IRI="#TouchScreen"/>
+        <Class IRI="#Users"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Windows_phone10"/>
+        <Class IRI="#Windows_phone7"/>
+        <Class IRI="#Windows_phone7.5"/>
+        <Class IRI="#Windows_phone7.8"/>
+        <Class IRI="#Windows_phone8"/>
+        <Class IRI="#Windows_phone8.1"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#1.0"/>
+        <Class IRI="#3.6"/>
+        <Class IRI="#5.0"/>
+        <Class IRI="#6.0"/>
+        <Class IRI="#7.0"/>
+        <Class IRI="#7.1"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Adults"/>
+        <NamedIndividual IRI="#Arshad"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Teenagers"/>
+        <NamedIndividual IRI="#Ruchira"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#iPhone_X"/>
+        <NamedIndividual IRI="#Arshad&apos;s_phone"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#uses"/>
+        <NamedIndividual IRI="#Arshad"/>
+        <NamedIndividual IRI="#Arshad&apos;s_phone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#uses"/>
+        <NamedIndividual IRI="#Ruchira"/>
+        <NamedIndividual IRI="#GR5"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#GR5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">30000.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Arshad&apos;s_phone"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">150000.0</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBrand"/>
+        <ObjectProperty IRI="#hasFeatures"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasChipset"/>
+        <ObjectProperty IRI="#hasFeatures"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasColor"/>
+        <ObjectProperty IRI="#hasFeatures"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDisplay"/>
+        <ObjectProperty IRI="#hasFeatures"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasOS"/>
+        <ObjectProperty IRI="#hasFeatures"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSensors"/>
+        <ObjectProperty IRI="#hasFeatures"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTouchscreen"/>
+        <ObjectProperty IRI="#hasFeatures"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isBrandOf"/>
+        <ObjectProperty IRI="#hasFeatures"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasBrand"/>
+        <ObjectProperty IRI="#isBrandOf"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasBrand"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasOS"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#hasBrand"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#hasOS"/>
+    </InverseFunctionalObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasBrand"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasOS"/>
+    </AsymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBrand"/>
+        <Class IRI="#Mobile"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasChipset"/>
+        <Class IRI="#Mobile"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasColor"/>
+        <Class IRI="#Mobile"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDisplay"/>
+        <Class IRI="#Mobile"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasOS"/>
+        <Class IRI="#SmartPhone"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTouchscreen"/>
+        <Class IRI="#SmartPhone"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isBrandOf"/>
+        <Class IRI="#Brand"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#uses"/>
+        <Class IRI="#Users"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBrand"/>
+        <Class IRI="#Brand"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasChipset"/>
+        <Class IRI="#Chipset"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasColor"/>
+        <Class IRI="#Body_Colors"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDisplay"/>
+        <Class IRI="#Display"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasOS"/>
+        <Class IRI="#OS"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTouchscreen"/>
+        <Class IRI="#TouchScreen"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isBrandOf"/>
+        <Class IRI="#Mobile"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#uses"/>
+        <Class IRI="#Mobile"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAge"/>
+        <Class IRI="#Users"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPrice"/>
+        <Class IRI="#Mobile"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAge"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPrice"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
