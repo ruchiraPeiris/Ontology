@@ -6,12 +6,18 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://www.gsmarena.com/ontologies/mobile.owl">
-    <Prefix name="" IRI="https://www.gsmarena.com/ontologies/mobile.owl#"/>
+    <Prefix name="" IRI="https://www.gsmarena.com/ontologies/mobile.owl"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <NamedIndividual IRI="#Alice_phone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alice"/>
+    </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasOS"/>
     </Declaration>
@@ -31,10 +37,13 @@
         <Class IRI="#Donut"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#compass"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Children"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#compass"/>
+        <Class IRI="#Micromax"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Ios5"/>
@@ -43,22 +52,19 @@
         <Class IRI="#Accelerometer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Micromax"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Lollipop"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Xperia_XA2_Plus"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Honeycomb"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Huawei"/>
+        <Class IRI="#Xperia_XA2_Plus"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Lumia_650"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Huawei"/>
     </Declaration>
     <Declaration>
         <Class IRI="#TouchScreen"/>
@@ -76,16 +82,19 @@
         <Class IRI="#iPhone_X"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#OLED"/>
+        <Class IRI="#SmartPhone"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SmartPhone"/>
+        <Class IRI="#OLED"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Cool_Black"/>
     </Declaration>
     <Declaration>
         <Class IRI="#3.6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Madusha_phone"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Ios4"/>
@@ -98,6 +107,12 @@
     </Declaration>
     <Declaration>
         <Class IRI="#AcousticPulserecognitionTouchScreen"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dinusha"/>
     </Declaration>
     <Declaration>
         <Class IRI="#LCD"/>
@@ -118,6 +133,9 @@
         <Class IRI="#Motorola"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Dinusha_phone"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#6.0"/>
     </Declaration>
     <Declaration>
@@ -136,10 +154,10 @@
         <ObjectProperty IRI="#uses"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Galaxy_Note9"/>
+        <Class IRI="#Lenovo"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Lenovo"/>
+        <Class IRI="#Galaxy_Note9"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasColor"/>
@@ -148,13 +166,19 @@
         <Class IRI="#Mobile"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasChipset"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Desire_12"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasChipset"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bob"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Old"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Adults"/>
     </Declaration>
     <Declaration>
         <Class IRI="#CapacitiveTouchScreen"/>
@@ -163,22 +187,19 @@
         <Class IRI="#Ios2"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Adults"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#hasDisplay"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#AMOLED"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasSensors"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Pixel_2"/>
+        <Class IRI="#AMOLED"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Q8"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pixel_2"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Qualcomm_SDM845_Snapdragon_845"/>
@@ -211,10 +232,10 @@
         <ObjectProperty IRI="#isBrandOf"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Brand"/>
+        <Class IRI="#Windows_phone7"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Windows_phone7"/>
+        <Class IRI="#Brand"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Ios1"/>
@@ -223,7 +244,7 @@
         <DataProperty IRI="#hasPrice"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Arshad&apos;s_phone"/>
+        <NamedIndividual IRI="#Milan_phone"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Ios9"/>
@@ -256,10 +277,19 @@
         <Class IRI="#Qualcomm_MSM8998_Snapdragon_835"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Ruchira_phone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bob_phone"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Eclair"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Iconia_Talk_S"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arshad_phone"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Users"/>
@@ -280,22 +310,22 @@
         <Class IRI="#Ios8"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Microsoft"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Fingerprint"/>
     </Declaration>
     <Declaration>
         <Class IRI="#BlackberryOS"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Microsoft"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OS"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#InfraredTouchScreen"/>
     </Declaration>
     <Declaration>
         <Class IRI="#PressureSensorTouchScreen"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OS"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Hisilicon_Kirin_970"/>
@@ -316,6 +346,9 @@
         <Class IRI="#Acer"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Madusha"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Bharat_Go"/>
     </Declaration>
     <Declaration>
@@ -323,6 +356,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Ios7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Milan"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Teenagers"/>
@@ -364,10 +400,13 @@
         <Class IRI="#Ios6"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Ruchira"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Windows_phone8.1"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Honor_Note_10"/>
+        <Class IRI="#Vodafone"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Silver"/>
@@ -376,10 +415,13 @@
         <Class IRI="#Moto_Z3"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Vodafone"/>
+        <Class IRI="#Honor_Note_10"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Apple"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#note_10_instance"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Nokia"/>
@@ -430,6 +472,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#A5"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasOS"/>
+            <Class IRI="#Oreo"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#AMOLED"/>
         <Class IRI="#Display"/>
     </SubClassOf>
@@ -477,6 +526,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Bharat_Go"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasOS"/>
+            <Class IRI="#Oreo"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Blackberry"/>
         <Class IRI="#Brand"/>
     </SubClassOf>
@@ -512,6 +568,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Desire_12"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasOS"/>
+            <Class IRI="#Nougat"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Donut"/>
         <Class IRI="#Android"/>
     </SubClassOf>
@@ -528,6 +591,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasBrand"/>
             <Class IRI="#Blackberry"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Evolve_X"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasOS"/>
+            <Class IRI="#Oreo"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -565,6 +635,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Galaxy_Note9"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasOS"/>
+            <Class IRI="#Oreo"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Gingerbread"/>
         <Class IRI="#Android"/>
     </SubClassOf>
@@ -596,6 +673,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Honor_Note_10"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasOS"/>
+            <Class IRI="#Oreo"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Huawei"/>
         <Class IRI="#Brand"/>
     </SubClassOf>
@@ -616,6 +700,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasBrand"/>
             <Class IRI="#Acer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Iconia_Talk_S"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasOS"/>
+            <Class IRI="#Marshmallow"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -706,6 +797,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Lumia_650"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasOS"/>
+            <Class IRI="#Windows_phone10"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Marshmallow"/>
         <Class IRI="#Android"/>
     </SubClassOf>
@@ -733,6 +831,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Mi_A2"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasOS"/>
+            <Class IRI="#Oreo"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Micromax"/>
         <Class IRI="#Brand"/>
     </SubClassOf>
@@ -749,6 +854,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasBrand"/>
             <Class IRI="#Motorola"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moto_Z3"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasOS"/>
+            <Class IRI="#Oreo"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -791,6 +903,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Pixel_2"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasOS"/>
+            <Class IRI="#Oreo"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#PressureSensorTouchScreen"/>
         <Class IRI="#TouchScreen"/>
     </SubClassOf>
@@ -803,6 +922,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasBrand"/>
             <Class IRI="#LG"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Q8"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasOS"/>
+            <Class IRI="#Oreo"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -842,6 +968,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasBrand"/>
             <Class IRI="#Vodafone"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Smart_N9"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasOS"/>
+            <Class IRI="#Oreo"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -912,6 +1045,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Xperia_XA2_Plus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasOS"/>
+            <Class IRI="#Oreo"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Z5"/>
         <Class IRI="#SmartPhone"/>
     </SubClassOf>
@@ -923,6 +1063,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Z5"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasOS"/>
+            <Class IRI="#Oreo"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Zenfone_5"/>
         <Class IRI="#SmartPhone"/>
     </SubClassOf>
@@ -931,6 +1078,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasBrand"/>
             <Class IRI="#Asus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Zenfone_5"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasOS"/>
+            <Class IRI="#Oreo"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1040,6 +1194,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#6.1_Plus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasOS"/>
+            <Class IRI="#Oreo"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#7.0"/>
         <Class IRI="#BlackberryOS"/>
     </SubClassOf>
@@ -1093,21 +1254,138 @@
     </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#Adults"/>
+        <NamedIndividual IRI="#Alice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#A5"/>
+        <NamedIndividual IRI="#Alice_phone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Adults"/>
         <NamedIndividual IRI="#Arshad"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#iPhone_X"/>
-        <NamedIndividual IRI="#Arshad&apos;s_phone"/>
+        <NamedIndividual IRI="#Arshad_phone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Adults"/>
+        <NamedIndividual IRI="#Bob"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Galaxy_Note9"/>
+        <NamedIndividual IRI="#Bob_phone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Adults"/>
+        <NamedIndividual IRI="#Dinusha"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Zenfone_5"/>
+        <NamedIndividual IRI="#Dinusha_phone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Adults"/>
+        <NamedIndividual IRI="#Madusha"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Zenfone_5"/>
+        <NamedIndividual IRI="#Madusha_phone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Adults"/>
+        <NamedIndividual IRI="#Milan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#iPhone_X"/>
+        <NamedIndividual IRI="#Milan_phone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Adults"/>
+        <NamedIndividual IRI="#Ruchira"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lumia_650"/>
+        <NamedIndividual IRI="#Ruchira_phone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Honor_Note_10"/>
+        <NamedIndividual IRI="#note_10_instance"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#uses"/>
+        <NamedIndividual IRI="#Alice"/>
+        <NamedIndividual IRI="#Alice_phone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#uses"/>
         <NamedIndividual IRI="#Arshad"/>
-        <NamedIndividual IRI="#Arshad&apos;s_phone"/>
+        <NamedIndividual IRI="#Arshad_phone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#uses"/>
+        <NamedIndividual IRI="#Bob"/>
+        <NamedIndividual IRI="#Bob_phone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#uses"/>
+        <NamedIndividual IRI="#Dinusha"/>
+        <NamedIndividual IRI="#Dinusha_phone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#uses"/>
+        <NamedIndividual IRI="#Madusha"/>
+        <NamedIndividual IRI="#Madusha_phone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#uses"/>
+        <NamedIndividual IRI="#Milan"/>
+        <NamedIndividual IRI="#Milan_phone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#uses"/>
+        <NamedIndividual IRI="#Ruchira"/>
+        <NamedIndividual IRI="#Ruchira_phone"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasPrice"/>
-        <NamedIndividual IRI="#Arshad&apos;s_phone"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">150000.0</Literal>
+        <NamedIndividual IRI="#Alice_phone"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">45000.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Arshad_phone"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">50000.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Bob_phone"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">125000.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Dinusha_phone"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">50000.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Madusha_phone"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">50000.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Milan_phone"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">65000.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Ruchira_phone"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">78000.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#note_10_instance"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35000</Literal>
     </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasBrand"/>
@@ -1228,12 +1506,20 @@
         <Class IRI="#Mobile"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
+        <DataProperty IRI="#hasAge"/>
+        <Class IRI="#Users"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#hasPrice"/>
         <Class IRI="#Mobile"/>
     </DataPropertyDomain>
     <DataPropertyRange>
+        <DataProperty IRI="#hasAge"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#hasPrice"/>
-        <Datatype abbreviatedIRI="xsd:double"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
 </Ontology>
 

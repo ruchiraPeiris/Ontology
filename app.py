@@ -1,4 +1,5 @@
 from flask import Flask, flash, redirect, render_template, request, session, abort
+from OWL_Ready.owl_manager import *
 
 app = Flask(__name__)
 
@@ -15,14 +16,13 @@ def hello(name):
     return render_template('found_wim_phone.html', name=name)
 
 
-@app.route('/find_phone', methods=['GET'])
+@app.route('/find_users', methods=['GET'])
 def search():
     try:
-        user_name = request.form['username']
-        brand_name = request.form['brandname']
-        os = request.form['os']
+        phone_price = request.form['price']
 
-        return render_template('found_wim_phone.html', name=user_name)
+        users = findUsersByPrice(phone_price)
+        return render_template('found_wim_phone.html', ph_price=phone_price, users_list=users)
     except:
         return render_template('wim_phone.html')
 
@@ -75,11 +75,11 @@ def search4():
         return render_template('input_form4.html')
 
 
-app.add_url_rule('/find_phone', 'search', search, methods=['GET', 'POST'])
+app.add_url_rule('/find_users', 'search', search, methods=['GET', 'POST'])
 app.add_url_rule('/query1', 'search1', search1, methods=['GET', 'POST'])
 app.add_url_rule('/query2', 'search2', search2, methods=['GET', 'POST'])
 app.add_url_rule('/query3', 'search3', search3, methods=['GET', 'POST'])
 app.add_url_rule('/query4', 'search4', search4, methods=['GET', 'POST'])
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=4000)
+    app.run(host='localhost', port=9800)
