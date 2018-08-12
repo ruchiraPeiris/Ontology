@@ -141,6 +141,15 @@
     
 
 
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#hasImage -->
+
+    <owl:DatatypeProperty rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#hasImage">
+        <rdfs:domain rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Mobile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://www.gsmarena.com/ontologies/mobile.owl#hasPrice -->
 
     <owl:DatatypeProperty rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#hasPrice">
@@ -1590,11 +1599,38 @@
     
 
 
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#A5 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#A5">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#A5"/>
+        <hasImage>https://cdn2.gsmarena.com/vv/pics/oppo/oppo-a5-1.jpg</hasImage>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://www.gsmarena.com/ontologies/mobile.owl#Arshad -->
 
     <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Arshad">
         <uses rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Arshad&apos;s_phone"/>
         <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</hasAge>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Bharat_Go -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Bharat_Go">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Bharat_Go"/>
+        <hasImage>https://cdn2.gsmarena.com/vv/pics/micromax/micromax-bharat-go-.jpg</hasImage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Desire_12 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Desire_12">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Desire_12"/>
+        <hasImage>https://cdn2.gsmarena.com/vv/pics/htc/htc-desire-12-00.jpg</hasImage>
     </owl:NamedIndividual>
     
 
@@ -1608,10 +1644,109 @@
     
 
 
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Evolve_X -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Evolve_X">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Evolve_X"/>
+        <hasImage>https://cdn2.gsmarena.com/vv/pics/blackberry/blackberry-exolve-x-5.jpg</hasImage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#GR5 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#GR5">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#GR5"/>
+        <hasImage>http://ap.yepmebazar.com/wp-content/uploads/2017/06/Huawei-GR5.jpg</hasImage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Galaxy_Note9 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Galaxy_Note9">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Galaxy_Note9"/>
+        <hasImage>https://cdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-note9-1.jpg</hasImage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Honor_Note_10 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Honor_Note_10">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Honor_Note_10"/>
+        <hasImage>https://cdn2.gsmarena.com/vv/pics/huawei/huawei-honor-note10-cn1.jpg</hasImage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Iconia_Talk_S -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Iconia_Talk_S">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Iconia_Talk_S"/>
+        <hasImage>https://cdn2.gsmarena.com/vv/pics/acer/acer-iconia-talk-s.jpg</hasImage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Iphone_X -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Iphone_X">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#iPhone_X"/>
+        <hasImage>https://cdn2.gsmarena.com/vv/pics/apple/apple-iphone-x-new-1.jpg</hasImage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Lumia_650 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Lumia_650">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Lumia_650"/>
+        <hasImage>https://cdn2.gsmarena.com/vv/pics/microsoft/lumia-650-01.jpg</hasImage>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://www.gsmarena.com/ontologies/mobile.owl#Madusha -->
 
     <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Madusha">
         <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</hasAge>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Mi_A2 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Mi_A2">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Mi_A2"/>
+        <hasImage>https://cdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-mi-a2-1.jpg</hasImage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Moto_Z3 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Moto_Z3">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Moto_Z3"/>
+        <hasImage>https://cdn2.gsmarena.com/vv/pics/motorola/motorola-moto-z3v-1.jpg</hasImage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Pixel_2 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Pixel_2">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Pixel_2"/>
+        <hasImage>https://cdn2.gsmarena.com/vv/pics/google/google-pixel-2-1.jpg</hasImage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Q8 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Q8">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Q8"/>
+        <hasImage>https://cdn2.gsmarena.com/vv/pics/lg/lg-q8-2018-5.jpg</hasImage>
     </owl:NamedIndividual>
     
 
@@ -1621,6 +1756,51 @@
     <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Ruchira">
         <uses rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Madusha&apos;s_Phone"/>
         <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</hasAge>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Smart_N9 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Smart_N9">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Smart_N9"/>
+        <hasImage>https://cdn2.gsmarena.com/vv/pics/vodafone/vodafone-smart-n9-1.jpg</hasImage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Xperia_XA2_plus -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Xperia_XA2_plus">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Xperia_XA2_Plus"/>
+        <hasImage>https://cdn2.gsmarena.com/vv/pics/sony/sony-xperia-xa2-1.jpg</hasImage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Z5 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Z5">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Z5"/>
+        <hasImage>https://cdn2.gsmarena.com/vv/pics/lenovo/lenovo-z5-aurora.jpg</hasImage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Zenfone_5 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Zenfone_5">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Zenfone_5"/>
+        <hasImage>https://cdn2.gsmarena.com/vv/pics/asus/asus-zenfone-5-ze620kl-5z-zs620kl-1.jpg</hasImage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#6.1_Plus -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#6.1_Plus">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#6.1_Plus"/>
+        <hasImage>https://cdn2.gsmarena.com/vv/pics/nokia/nokia-61-plus-1.jpg</hasImage>
     </owl:NamedIndividual>
     
 
