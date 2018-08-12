@@ -3,10 +3,17 @@
 
 {% block body %}
 <style>
+
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 50%;
+    counter-reset: tableCount;
+}
+
+.counterCell:before {
+    content: counter(tableCount);
+    counter-increment: tableCount;
 }
 
 td, th {
