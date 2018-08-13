@@ -3,13 +3,57 @@
 
 {% block body %}
 
+    <style>
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    counter-reset: tableCount;
+}
+
+.counterCell:before {
+    content: counter(tableCount);
+    counter-increment: tableCount;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+
 <div class="block1">
-<h1>Hello {{name}}!</h1>
-  <h2>This is the ideal phone for you: </h2>
-  <p>
-"The limits of my language are the limits of my mind. All I know is what I have words for."
-  </p>
-<img src="https://cdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-note9-1.jpg"/>
+<h1>Hello !</h1>
+  <h2>This is the phone for you: </h2>
+<br>
+{#<img src="https://cdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-note9-1.jpg"/>#}
+<img src="https://cdn2.gsmarena.com/vv/pics/apple/apple-iphone-x-new-1.jpg"/>
+
+ <table align="center">
+   <thead>
+      <tr>
+        <th>No.</th>
+        <th>Phone</th>
+      </tr>
+   </thead>
+
+  <tbody>
+    {% for phone in phone_list %}
+        <tr>
+          <td class="counterCell"></td>
+          <td>{{phone}}</td>
+        </tr>
+    {% endfor %}
+  </tbody>
+
+</table>
+<br><br><br>
   <p>
 "We hope you may like this phone."
   </p>

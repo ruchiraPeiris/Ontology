@@ -38,6 +38,7 @@ for item in onto.annotation_properties():
 sync_reasoner(my_world)
 graph = my_world.as_rdflib_graph()
 
+
 # find users who have phones that cost more than the given price
 def findUsersByPrice(price):
     r = list(graph.query("""
@@ -55,6 +56,7 @@ def findUsersByPrice(price):
     print(users_list)
     return users_list
 
+
 # recommend phones to users based on brand and OS
 def recommendPhone(brand, os):
     uri = '<https://www.gsmarena.com/ontologies/mobile.owl#'
@@ -63,19 +65,20 @@ def recommendPhone(brand, os):
                             WHERE {
                             ?model rdfs:subClassOf <https://www.gsmarena.com/ontologies/mobile.owl#SmartPhone>.
                             ?mi a ?model.
-                            ?b a """ + uri+brand + """>.
-                            ?o a """ + uri+os + """>.
+                            ?b a """ + uri + brand + """>.
+                            ?o a """ + uri + os + """>.
                             ?mi <https://www.gsmarena.com/ontologies/mobile.owl#hasBrand> ?b.
                             ?mi <https://www.gsmarena.com/ontologies/mobile.owl#hasOS> ?o.
                             }"""))
     r = np.asarray(r)
     recommend = []
     for i in r:
-        recommend.append(np.char.split(i, sep = '#')[0][1])
+        recommend.append(np.char.split(i, sep='#')[0][1])
 
     recommend = np.asarray(recommend)
-    print(recommend)
+    # print(recommend)
     return recommend
+
 
 # recommend phones based on chipset
 def RecommendOnChipset(chipset):
@@ -91,12 +94,13 @@ def RecommendOnChipset(chipset):
     r = np.asarray(r)
     recommend = []
     for i in r:
-        recommend.append(np.char.split(i, sep = '#')[0][1])
+        recommend.append(np.char.split(i, sep='#')[0][1])
         # print(np.char.split(i, sep = '#'))
 
     recommend = np.asarray(recommend)
-    print(recommend)
+    # print(recommend)
     return recommend
+
 
 def teenPhone(ageGroup):
     uri = '<https://www.gsmarena.com/ontologies/mobile.owl#'
@@ -128,6 +132,7 @@ def teenPhone(ageGroup):
 
     print(brands[maxpos])
     return brands[maxpos]
+
 
 br = 'Motorola'
 oss = 'Oreo'

@@ -30,11 +30,11 @@ def search():
 @app.route('/query1', methods=['GET'])
 def search1():
     try:
-        user_name = request.form['username']
         brand_name = request.form['brandname']
         os = request.form['os']
         phones = recommendPhone(brand_name, os)
-        return render_template('result1.html', name=user_name)
+        print(phones)
+        return render_template('result1.html', phone_list=phones)
     except:
         return render_template('input_form1.html')
 
