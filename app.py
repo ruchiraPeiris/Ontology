@@ -82,4 +82,4 @@ app.add_url_rule('/query3', 'search3', search3, methods=['GET', 'POST'])
 app.add_url_rule('/query4', 'search4', search4, methods=['GET', 'POST'])
 
 if __name__ == "__main__":
-    app.run(host='localhost', port=9800)
+    app.run(host='localhost', port=4000)
