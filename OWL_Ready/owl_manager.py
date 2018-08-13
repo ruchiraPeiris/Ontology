@@ -3,8 +3,9 @@ import numpy as np
 from rdflib import *
 import os.path
 
-root_path = os.path.normpath(os.getcwd() + os.sep + os.pardir)
+root_path = os.path.normpath(os.getcwd() + os.sep + os.pardir) + '/Ontology'
 os.chdir(root_path)
+print(root_path)
 my_world = World()
 onto_path.append(root_path)
 onto = my_world.get_ontology('file:../MobileClassesComplete.owl').load()
@@ -29,7 +30,7 @@ for item in onto.annotation_properties():
 # print("Properties :", properties)
 # print("Annotation properties :", annot_properties)
 # print("Disjoints :", onto.all_disjoints)
-#SSS
+# SSS
 #
 # print(onto.search(hasPrice = 30000))
 # print(onto.search(iri = "*TouchScreen"))
@@ -37,27 +38,31 @@ for item in onto.annotation_properties():
 sync_reasoner(my_world)
 graph = my_world.as_rdflib_graph()
 
-def SampleQuery():
+
+def findUsersByPrice(price):
     r = list(graph.query("""
                 SELECT DISTINCT ?s ?p
                 WHERE {
                 ?s <https://www.gsmarena.com/ontologies/mobile.owl#hasPrice> ?p
                 }"""))
-
     r = np.asarray(r)
+    users_list = list(())
 
-    for item in r[:, 1]:
-        if float(item) > 50000.0:
-            print(item)
+    for item in r:
+        if float(item[1]) > float(price):
+            users_list.append((item[0].split('#')[1], item[1]))
+
+    return users_list
 
 
 def recommendPhone(brand, os):
     uri = '<https://www.gsmarena.com/ontologies/mobile.owl#'
     r = list(graph.query("""PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-                            PREFIX owl: <http://www.w3.org/2002/07/owl#>
+                            PREFIX owl:SampleQuery <http://www.w3.org/2002/07/owl#>
                             SELECT ?model
                             WHERE {
                             ?model rdfs:subClassOf <https://www.gsmarena.com/ontologies/mobile.owl#SmartPhone>.
+<<<<<<< HEAD
                             ?mi a ?model.
                             ?b a """ + uri+brand + """>.
                             ?o a """ + uri+os + """>.
@@ -72,9 +77,26 @@ def recommendPhone(brand, os):
     recommend = np.asarray(recommend)
     print(recommend)
     return recommend
+=======
+                            ?model <https://www.gsmarena.com/ontologies/mobile.owl#hasBrand> """ + uri + brand + """>.
+                            }"""))
+    r = np.asarray(r)
+    print("""PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+                            PREFIX owl: <http://www.w3.org/2002/07/owl#>
+                            SELECT ?model
+                            WHERE {
+                            ?model rdfs:subClassOf <https://www.gsmarena.com/ontologies/mobile.owl#SmartPhone>.
+                            ?model <https://www.gsmarena.com/ontologies/mobile.owl#hasBrand> """ + uri + brand + """>.
+                            ?model <https://www.gsmarena.com/ontologies/mobile.owl#hasOS> """ + uri + os + """>.
+                            }""")
+
+
+# SampleQuery()
+>>>>>>> 3859234974eea763f9a9d09b268789eb1cb4b22e
 
 # SampleQuery()
 
 br = 'Huawei'
 oss = 'Oreo'
-recommendPhone(br, oss)
+# recommendPhone(br, oss)
+# sampleQuery()

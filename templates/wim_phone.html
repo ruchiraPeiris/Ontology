@@ -50,27 +50,15 @@
 {#</form>#}
 
 
-<h1>Find My Phone</h1>
+<h1>Find Users As Per Phone Price </h1>
 
 <div class="container">
-  <form action="find_phone" method="POST">
-    <label for="fname">Name</label>
-    <input type="text" id="username" name="username" placeholder="Your name..">
+  <form action="find_users" method="POST">
+    <label for="price">Phone Price :</label>
+    <input type="text" id="price" name="price" placeholder="Phone Price">
 
-    <label for="age">Age</label>
-    <input type="text" id="age" name="age" placeholder="Age">
-
-    <label for="bname">Brand Name</label>
-    <input type="text" id="brandname" name="brandname" placeholder="Your preferred brand">
-
-    <label for="os">Operating System</label>
-    <select id="os" name="os">
-      <option value="android">Android</option>
-      <option value="ios">IOS</option>
-      <option value="windows">Windows</option>
-    </select>
       <br/><br/>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Find Users">
   </form>
 </div>
 

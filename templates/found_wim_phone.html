@@ -2,17 +2,58 @@
 {% include 'navigation_bar.html' %}
 
 {% block body %}
- 
+<style>
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    counter-reset: tableCount;
+}
+
+.counterCell:before {
+    content: counter(tableCount);
+    counter-increment: tableCount;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
 <div class="block1">
-<h1>Hello {{name}}!</h1>
-  <h2>This is the ideal phone for you: </h2>
-  <p>
-"The limits of my language are the limits of my mind. All I know is what I have words for."
-  </p>
-<img src="https://cdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-note9-1.jpg"/>
-  <p>
-"We hope you may like this phone."
-  </p>
+<h1>Users who use Phones over Rs.{{ ph_price }}</h1>
+  <h2>We have found these users as per user request: </h2>
+</br><br/>
+{#<img src="https://www.google.lk/imgres?imgurl=https%3A%2F%2Frietveld-ict.nl%2Fwp-content%2Fuploads%2F2014%2F01%2Fusers.png&imgrefurl=https%3A%2F%2Frietveld-ict.nl%2Fhow-to-get-a-list-of-specified-users-and-their-group-membership-from-active-directory%2F&docid=a97KqOsyi6fA4M&tbnid=PcQgPOYqVFGugM%3A&vet=10ahUKEwil19CsoujcAhXVfysKHY2tDiwQMwiyASgIMAg..i&w=500&h=240&bih=698&biw=1456&q=users&ved=0ahUKEwil19CsoujcAhXVfysKHY2tDiwQMwiyASgIMAg&iact=mrc&uact=8"/>#}
+<img src="{{ url_for('static', filename='images/users.png') }}">
+    <table align="center">
+   <thead>
+      <tr>
+        <th>No.</th>
+        <th>User</th>
+        <th>Phone Price</th>
+      </tr>
+   </thead>
+
+  <tbody>
+    {% for user in users_list %}
+        <tr>
+          <td class="counterCell"></td>
+          <td>{{user[0]}}</td>
+          <td>{{user[1]}}</td>
+        </tr>
+    {% endfor %}
+  </tbody>
+
+</>
+
+
 <br><br><br><br>
 </div>
 
