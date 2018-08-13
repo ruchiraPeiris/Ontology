@@ -21,7 +21,7 @@ def search():
     try:
         phone_price = request.form['price']
 
-        users = findUsersByPrice(phone_price)
+        users = findUsersByPrice(int(phone_price))
         return render_template('found_wim_phone.html', ph_price=phone_price, users_list=users)
     except:
         return render_template('wim_phone.html')
