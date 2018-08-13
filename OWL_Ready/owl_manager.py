@@ -1,7 +1,7 @@
 from owlready2 import *
 import numpy as np
-from rdflib import *
-import os.path
+import rdflib
+from collections import Counter
 
 my_world = World()
 onto = my_world.get_ontology('../MobileClassesComplete.owl').load()
@@ -55,7 +55,6 @@ def findUsersByPrice(price):
 def recommendPhone(brand, os):
     uri = '<https://www.gsmarena.com/ontologies/mobile.owl#'
     r = list(graph.query("""PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
-                            PREFIX owl: <http://www.w3.org/2002/07/owl#>
                             SELECT ?model
                             WHERE {
                             ?model rdfs:subClassOf <https://www.gsmarena.com/ontologies/mobile.owl#SmartPhone>.
@@ -78,7 +77,6 @@ def recommendPhone(brand, os):
 def RecommendOnChipset(chipset):
     uri = '<https://www.gsmarena.com/ontologies/mobile.owl#'
     r = list(graph.query("""PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
-                            PREFIX owl:<http://www.w3.org/2002/07/owl#>
                             SELECT ?model
                             WHERE {
                             ?model rdfs:subClassOf <https://www.gsmarena.com/ontologies/mobile.owl#SmartPhone>.
@@ -90,11 +88,42 @@ def RecommendOnChipset(chipset):
     recommend = []
     for i in r:
         recommend.append(np.char.split(i, sep = '#')[0][1])
+        # print(np.char.split(i, sep = '#'))
 
     recommend = np.asarray(recommend)
     print(recommend)
     return recommend
 
+def teenPhone(ageGroup):
+    uri = '<https://www.gsmarena.com/ontologies/mobile.owl#'
+    r = list(graph.query("""PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+                            SELECT ?brand
+                            WHERE {
+                            ?user a """ + uri + ageGroup + """>.
+                            ?model rdfs:subClassOf <https://www.gsmarena.com/ontologies/mobile.owl#SmartPhone>.
+                            ?phone a ?model.
+                            ?user <https://www.gsmarena.com/ontologies/mobile.owl#uses> ?phone.
+                            ?phone <https://www.gsmarena.com/ontologies/mobile.owl#hasBrand> ?b.
+                            ?b a ?brand.
+                            }"""))
+
+    r = np.asarray(r)
+    # r = r.flatten()
+    b = []
+    for i in r:
+        b.append(np.char.split(i, sep='#')[0][1])
+    b = np.asarray(b)
+    brands = []
+    for i in b:
+        if i != 'NamedIndividual':
+            brands.append(i)
+
+    unique, pos = np.unique(brands, return_inverse=True)
+    counts = np.bincount(pos)
+    maxpos = counts.argmax()
+
+    print(brands[maxpos])
+    return brands[maxpos]
 
 br = 'Motorola'
 oss = 'Oreo'
@@ -102,3 +131,5 @@ oss = 'Oreo'
 # findUsersByPrice(30000)
 chip = 'Qualcomm_SDM845_Snapdragon_845'
 # RecommendOnChipset(chip)
+age = 'Teenagers'
+teenPhone(age)

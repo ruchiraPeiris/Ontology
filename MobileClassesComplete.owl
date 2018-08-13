@@ -1720,6 +1720,16 @@
     
 
 
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Charlie -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Charlie">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Teenagers"/>
+        <uses rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#charlie_phone"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</hasAge>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://www.gsmarena.com/ontologies/mobile.owl#Dinusha -->
 
     <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Dinusha">
@@ -1738,6 +1748,26 @@
         <hasChipset rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#snap_845"/>
         <hasOS rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#sample_oreo"/>
         <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150000</hasPrice>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Johnny -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Johnny">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Teenagers"/>
+        <uses rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#johnny_phone"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</hasAge>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Lenny -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Lenny">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Teenagers"/>
+        <uses rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#lenny_phone"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</hasAge>
     </owl:NamedIndividual>
     
 
@@ -1763,6 +1793,38 @@
     
 
 
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Milan -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Milan">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Adults"/>
+        <uses rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Milan_phone"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</hasAge>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Milan_phone -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Milan_phone">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Galaxy_Note9"/>
+        <hasBrand rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#sample_sam"/>
+        <hasChipset rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#snap_845"/>
+        <hasOS rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#sample_oreo"/>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150000</hasPrice>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Penny -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Penny">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Teenagers"/>
+        <uses rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#penny_phone"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</hasAge>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://www.gsmarena.com/ontologies/mobile.owl#Ruchira -->
 
     <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Ruchira">
@@ -1781,6 +1843,36 @@
         <hasChipset rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#snap_835"/>
         <hasOS rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#sample_nou"/>
         <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65000</hasPrice>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Shelly -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Shelly">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Teenagers"/>
+        <uses rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#shelly_phone"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</hasAge>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Teen1 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Teen1">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Teenagers"/>
+        <uses rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#teen1_phone"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</hasAge>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Teen2 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Teen2">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Teenagers"/>
+        <uses rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#teen2_phone"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</hasAge>
     </owl:NamedIndividual>
     
 
@@ -1811,6 +1903,15 @@
         <hasBrand rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#sample_micro"/>
         <hasChipset rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#snap_835"/>
         <hasOS rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#sample_oreo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#charlie_phone -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#charlie_phone">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#GR5"/>
+        <hasBrand rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#sample_hua"/>
     </owl:NamedIndividual>
     
 
@@ -1936,12 +2037,39 @@
     
 
 
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#johnny_phone -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#johnny_phone">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Moto_Z3"/>
+        <hasBrand rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#sample_moto"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#lenny_phone -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#lenny_phone">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Lumia_650"/>
+        <hasBrand rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#sample_soft"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://www.gsmarena.com/ontologies/mobile.owl#lum_ini -->
 
     <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#lum_ini">
         <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Lumia_650"/>
         <hasBrand rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#sample_soft"/>
         <hasOS rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#w10"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#penny_phone -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#penny_phone">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Honor_Note_10"/>
+        <hasBrand rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#sample_hua"/>
     </owl:NamedIndividual>
     
 
@@ -2276,6 +2404,15 @@
     
 
 
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#shelly_phone -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#shelly_phone">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#GR5"/>
+        <hasBrand rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#sample_hua"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://www.gsmarena.com/ontologies/mobile.owl#smart_ins -->
 
     <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#smart_ins">
@@ -2298,6 +2435,24 @@
 
     <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#snap_845">
         <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Qualcomm_SDM845_Snapdragon_845"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#teen1_phone -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#teen1_phone">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#GR5"/>
+        <hasBrand rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#sample_hua"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#teen2_phone -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#teen2_phone">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Honor_Note_10"/>
+        <hasBrand rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#sample_hua"/>
     </owl:NamedIndividual>
     
 
