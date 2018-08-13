@@ -7,7 +7,7 @@ root_path = os.path.normpath(os.getcwd() + os.sep + os.pardir)
 os.chdir(root_path)
 my_world = World()
 onto_path.append(root_path)
-onto = my_world.get_ontology('file:../Mobile_V1.3.owl').load()
+onto = my_world.get_ontology('file:../MobileClassesComplete.owl').load()
 # onto = get_ontology('https://www.gsmarena.com/ontologies/Mobile_V1.3.owl')
 
 
@@ -58,20 +58,22 @@ def recommendPhone(brand, os):
                             SELECT ?model
                             WHERE {
                             ?model rdfs:subClassOf <https://www.gsmarena.com/ontologies/mobile.owl#SmartPhone>.
-                            ?model <https://www.gsmarena.com/ontologies/mobile.owl#hasBrand> """ + uri+brand + """>.
+                            ?mi a ?model.
+                            ?b a """ + uri+brand + """>.
+                            ?o a """ + uri+os + """>.
+                            ?mi <https://www.gsmarena.com/ontologies/mobile.owl#hasBrand> ?b.
+                            ?mi <https://www.gsmarena.com/ontologies/mobile.owl#hasOS> ?o.
                             }"""))
     r = np.asarray(r)
-    print("""PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-                            PREFIX owl: <http://www.w3.org/2002/07/owl#>
-                            SELECT ?model
-                            WHERE {
-                            ?model rdfs:subClassOf <https://www.gsmarena.com/ontologies/mobile.owl#SmartPhone>.
-                            ?model <https://www.gsmarena.com/ontologies/mobile.owl#hasBrand> """ + uri+brand + """>.
-                            ?model <https://www.gsmarena.com/ontologies/mobile.owl#hasOS> """ + uri+os + """>.
-                            }""")
+    recommend = []
+    for i in r:
+        recommend.append(np.char.split(i, sep = '#')[0][1])
+
+    recommend = np.asarray(recommend)
+    print(recommend)
+    return recommend
 
 # SampleQuery()
-
 
 br = 'Huawei'
 oss = 'Oreo'

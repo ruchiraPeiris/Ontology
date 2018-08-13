@@ -1593,8 +1593,18 @@
     <!-- https://www.gsmarena.com/ontologies/mobile.owl#Arshad -->
 
     <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Arshad">
-        <uses rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Arshad&apos;s_phone"/>
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Adults"/>
+        <uses rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Arshad_phone"/>
         <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</hasAge>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Arshad_phone -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Arshad_phone">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#iPhone_X"/>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150000</hasPrice>
     </owl:NamedIndividual>
     
 
@@ -1602,8 +1612,18 @@
     <!-- https://www.gsmarena.com/ontologies/mobile.owl#Dinusha -->
 
     <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Dinusha">
-        <uses rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Dinusha&apos;s_phone"/>
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Adults"/>
+        <uses rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Dinusha_phone"/>
         <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</hasAge>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Dinusha_phone -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Dinusha_phone">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Galaxy_Note9"/>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150000</hasPrice>
     </owl:NamedIndividual>
     
 
@@ -1611,7 +1631,18 @@
     <!-- https://www.gsmarena.com/ontologies/mobile.owl#Madusha -->
 
     <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Madusha">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Adults"/>
+        <uses rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Madusha_phone"/>
         <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</hasAge>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Madusha_phone -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Madusha_phone">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Mi_A2"/>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35000</hasPrice>
     </owl:NamedIndividual>
     
 
@@ -1619,43 +1650,452 @@
     <!-- https://www.gsmarena.com/ontologies/mobile.owl#Ruchira -->
 
     <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Ruchira">
-        <uses rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Madusha&apos;s_Phone"/>
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Adults"/>
+        <uses rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Ruchira_phone"/>
         <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</hasAge>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Arshad&apos;s_phone -->
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Ruchira_phone -->
 
-    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Arshad&apos;s_phone">
-        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#iPhone_X"/>
-        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150000</hasPrice>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Dinusha&apos;s_phone -->
-
-    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Dinusha&apos;s_phone">
-        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Galaxy_Note9"/>
-        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150000</hasPrice>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Madusha&apos;s_Phone -->
-
-    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Madusha&apos;s_Phone">
-        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Mi_A2"/>
-        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35000</hasPrice>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.gsmarena.com/ontologies/mobile.owl#Ruchira&apos;s_Phone -->
-
-    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Ruchira&apos;s_Phone">
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Ruchira_phone">
         <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#GR5"/>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65000</hasPrice>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#iios1 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#iios1">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Ios1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#iios10 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#iios10">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Ios10"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#iios11 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#iios11">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Ios11"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#iios2 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#iios2">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Ios2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#iios3 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#iios3">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Ios3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#iios4 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#iios4">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Ios4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#iios5 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#iios5">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Ios5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#iios6 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#iios6">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Ios6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#iios7 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#iios7">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Ios7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#iios8 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#iios8">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Ios8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#iios9 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#iios9">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Ios9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_acer -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_acer">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Acer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_apple -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_apple">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Apple"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_asus -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_asus">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Asus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_b1 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_b1">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#1.0"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_b36 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_b36">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#3.6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_b5 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_b5">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#5.0"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_b6 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_b6">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#6.0"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_b7 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_b7">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#7.0"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_b71 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_b71">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#7.1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_berry -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_berry">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Blackberry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_don -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_don">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Donut"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_ecl -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_ecl">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Eclair"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_fro -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_fro">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Froyo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_gin -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_gin">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Gingerbread"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_goo -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_goo">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Google"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_hon -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_hon">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Honeycomb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_honor -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_honor">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Honor_Note_10"/>
+        <hasBrand rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#sample_hua"/>
+        <hasOS rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#sample_oreo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_htc -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_htc">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#HTC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_hua -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_hua">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Huawei"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_ics -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_ics">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Ice_cream_sandwich"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_jb -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_jb">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Jelly_Bean"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_kk -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_kk">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#KitKat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_len -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_len">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Lenovo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_lg -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_lg">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#LG"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_lol -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_lol">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Lollipop"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_marsh -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_marsh">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Marshmallow"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_micro -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_micro">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Micromax"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_moto -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_moto">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Motorola"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_nok -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_nok">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Nokia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_nou -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_nou">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Nougat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_opp -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_opp">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Oppo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_oreo -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_oreo">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Oreo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_sam -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_sam">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Samsung"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_soft -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_soft">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Microsoft"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_sony -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_sony">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Sony"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_vod -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_vod">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Vodafone"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#sample_xia -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#sample_xia">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Xiaomi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#w10 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#w10">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Windows_phone10"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#w7 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#w7">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Windows_phone7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#w75 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#w75">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Windows_phone7.5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#w78 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#w78">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Windows_phone7.8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#w8 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#w8">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Windows_phone8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#w81 -->
+
+    <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#w81">
+        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Windows_phone8.1"/>
     </owl:NamedIndividual>
     
 
