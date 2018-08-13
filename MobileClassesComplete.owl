@@ -150,6 +150,24 @@
     
 
 
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#hasSize -->
+
+    <owl:DatatypeProperty rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#hasSize">
+        <rdfs:domain rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Mobile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.gsmarena.com/ontologies/mobile.owl#hasWeight -->
+
+    <owl:DatatypeProperty rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#hasWeight">
+        <rdfs:domain rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Mobile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1701,7 +1719,6 @@
     <!-- https://www.gsmarena.com/ontologies/mobile.owl#Arshad -->
 
     <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Arshad">
-        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Adults"/>
         <uses rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Arshad_phone"/>
         <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</hasAge>
     </owl:NamedIndividual>
@@ -1733,7 +1750,6 @@
     <!-- https://www.gsmarena.com/ontologies/mobile.owl#Dinusha -->
 
     <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Dinusha">
-        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Adults"/>
         <uses rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Dinusha_phone"/>
         <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</hasAge>
     </owl:NamedIndividual>
@@ -1775,7 +1791,6 @@
     <!-- https://www.gsmarena.com/ontologies/mobile.owl#Madusha -->
 
     <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Madusha">
-        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Adults"/>
         <uses rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Madusha_phone"/>
         <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</hasAge>
     </owl:NamedIndividual>
@@ -1828,7 +1843,6 @@
     <!-- https://www.gsmarena.com/ontologies/mobile.owl#Ruchira -->
 
     <owl:NamedIndividual rdf:about="https://www.gsmarena.com/ontologies/mobile.owl#Ruchira">
-        <rdf:type rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Adults"/>
         <uses rdf:resource="https://www.gsmarena.com/ontologies/mobile.owl#Ruchira_phone"/>
         <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</hasAge>
     </owl:NamedIndividual>
