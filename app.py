@@ -33,7 +33,7 @@ def search1():
         brand_name = request.form['brandname']
         os = request.form['os']
         phones = recommendPhone(brand_name, os)
-        print(phones)
+        # print(phones)
         return render_template('result1.html', phone_list=phones)
     except:
         return render_template('input_form1.html')
@@ -43,10 +43,11 @@ def search1():
 def search2():
     try:
         user_name = request.form['username']
-        brand_name = request.form['brandname']
-        os = request.form['os']
+        chipset = request.form['cs']
 
-        return render_template('result2.html', name=user_name)
+        phones = RecommendOnChipset(chipset)
+        print(phones)
+        return render_template('result2.html', name=user_name, phone_cs_list=phones)
     except:
         return render_template('input_form2.html')
 

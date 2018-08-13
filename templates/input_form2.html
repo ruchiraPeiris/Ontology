@@ -4,7 +4,30 @@
 {% include 'navigation_bar.html' %}
 
 {% block body %}
+ <style>
 
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    counter-reset: tableCount;
+}
+
+.counterCell:before {
+    content: counter(tableCount);
+    counter-increment: tableCount;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
 <h1>Find My Phone</h1>
 
 <div class="container">
@@ -12,14 +35,12 @@
     <label for="fname">Name</label>
     <input type="text" id="username" name="username" placeholder="Your name..">
 
-    <label for="bname">Brand Name</label>
-    <input type="text" id="brandname" name="brandname" placeholder="Your preferred brand">
 
-    <label for="os">Operating System</label>
-    <select id="os" name="os">
-      <option value="android">Android</option>
-      <option value="ios">IOS</option>
-      <option value="windows">Windows</option>
+    <label for="cs">Chipset</label>
+    <select id="cs" name="cs">
+      <option value="A11_Bionic">A11 Bionic</option>
+      <option value="Mediatek_MT6739">Mediatek_MT6739</option>
+      <option value="Qualcomm_SDM845_Snapdragon_845">Qualcomm</option>
     </select>
       <br/><br/>
     <input type="submit" value="Submit">
