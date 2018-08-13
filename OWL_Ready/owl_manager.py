@@ -3,8 +3,12 @@ import numpy as np
 import rdflib
 from collections import Counter
 
+root_path = os.path.normpath(os.getcwd() + os.sep + os.pardir) + '/Ontology'
+os.chdir(root_path)
+print(root_path)
 my_world = World()
-onto = my_world.get_ontology('../MobileClassesComplete.owl').load()
+onto_path.append(root_path)
+onto = my_world.get_ontology('file:../MobileClassesComplete.owl').load()
 # onto = get_ontology('https://www.gsmarena.com/ontologies/Mobile_V1.3.owl')
 
 
@@ -31,7 +35,7 @@ for item in onto.annotation_properties():
 # print(onto.search(hasPrice = 30000))
 # print(onto.search(iri = "*TouchScreen"))
 
-# sync_reasoner(my_world)
+sync_reasoner(my_world)
 graph = my_world.as_rdflib_graph()
 
 # find users who have phones that cost more than the given price

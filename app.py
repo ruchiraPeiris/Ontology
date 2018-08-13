@@ -33,7 +33,12 @@ def search1():
         user_name = request.form['username']
         brand_name = request.form['brandname']
         os = request.form['os']
+<<<<<<< HEAD
         phones = recommendPhone(brand_name, os)
+=======
+        mobile = recommendPhone("Apple","Ios11")
+
+>>>>>>> 90fd6f9777ed6dc7b263548adbd779c06538b9f5
         return render_template('result1.html', name=user_name)
     except:
         return render_template('input_form1.html')
