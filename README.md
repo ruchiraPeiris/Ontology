@@ -4,7 +4,10 @@ In this implementation we have used Protege 5.2 implement owl about the smart mo
 done by Python libraries and SPARQL queries.
 When selecting Query type from the user interface, User can select different SPARQL query for the different data retreve
 and user can assign values for the relevent variable by text fields and dropdonws.
-
+# Example Host
+[http://34.239.133.194:4000/](http://34.239.133.194:4000/)  
+Note : This link only for development and demonstration purposes not for the other purposes. This host will be automatically 
+shutdown within few months (Aug-14-2018 to Sep-13-2018)
 ## Prerequisites 
 * Python 3.6 or above
 * Owlready2
