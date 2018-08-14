@@ -17,7 +17,7 @@ In the Linux,
 * Anaconda
 * Virtual Interpreter
 
-## Java path error on Owlready2
+## Java path prerequisite for Owlready2
 When using Owlready2, You should define Java path when there error happened by faild to find java path. For the errror
 see below,
 
