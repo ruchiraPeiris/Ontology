@@ -5,21 +5,17 @@
 
 {% block body %}
 
-<h1>Find My Phone</h1>
+<h1>Find the Phone for me</h1>
 
 <div class="container">
   <form action="query3" method="POST">
     <label for="fname">Name</label>
     <input type="text" id="username" name="username" placeholder="Your name..">
 
-    <label for="bname">Brand Name</label>
-    <input type="text" id="brandname" name="brandname" placeholder="Your preferred brand">
-
-    <label for="os">Operating System</label>
-    <select id="os" name="os">
-      <option value="android">Android</option>
-      <option value="ios">IOS</option>
-      <option value="windows">Windows</option>
+    <label for="age">Age Group</label>
+    <select id="age" name="age">
+      <option value="Adults">Adult</option>
+      <option value="Teenagers">Teenager</option>
     </select>
       <br/><br/>
     <input type="submit" value="Submit">

@@ -56,10 +56,11 @@ def search2():
 def search3():
     try:
         user_name = request.form['username']
-        brand_name = request.form['brandname']
-        os = request.form['os']
+        agegroup = request.form['age']
+        phones = teenPhone(agegroup)
+        print(phones)
 
-        return render_template('result3.html', name=user_name)
+        return render_template('result3.html', name=user_name, phone_age_list=phones)
     except:
         return render_template('input_form3.html')
 
