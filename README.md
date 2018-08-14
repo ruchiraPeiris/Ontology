@@ -12,7 +12,6 @@ and user can assign values for the relevent variable by text fields and dropdonw
 * rdflib
 
 ## Python Interpreter
-In the Linux,
 * System Interpreter
 * Anaconda
 * Virtual Interpreter
