@@ -34,7 +34,7 @@ def search1():
         os = request.form['os']
         phones = recommendPhone(brand_name, os)
         # print(phones)
-        return render_template('result1.html', phone_list=phones)
+        return render_template('result1.html', phone_list=set(phones))
     except:
         return render_template('input_form1.html')
 
@@ -47,7 +47,7 @@ def search2():
 
         phones = RecommendOnChipset(chipset)
         print(phones)
-        return render_template('result2.html', name=user_name, phone_cs_list=phones)
+        return render_template('result2.html', name=user_name, phone_cs_list=set(phones))
     except:
         return render_template('input_form2.html')
 
