@@ -9,10 +9,11 @@ and user can assign values for the relevent variable by text fields and dropdonw
 Note : This link only for development and demonstration purposes not for the other purposes. This host will be automatically 
 shutdown within few months (Aug-14-2018 to Sep-13-2018)
 ## Prerequisites 
-* Python 3.6 or above
+* Python 3.5 or above
 * Owlready2
 * Flask
 * rdflib
+* Numpy
 
 ## Python Interpreter
 * System Interpreter
