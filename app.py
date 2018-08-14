@@ -1,4 +1,4 @@
-from flask import Flask, flash, redirect, render_template, request, session, abort
+from flask import Flask, render_template, request, session, abort
 from OWL_Ready.owl_manager import *
 
 app = Flask(__name__)
@@ -33,7 +33,6 @@ def search1():
         brand_name = request.form['brandname']
         os = request.form['os']
         phones = recommendPhone(brand_name, os)
-        # print(phones)
         return render_template('result1.html', phone_list=set(phones))
     except:
         return render_template('input_form1.html')

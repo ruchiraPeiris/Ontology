@@ -1,7 +1,6 @@
 from owlready2 import *
 import numpy as np
-import rdflib
-from collections import Counter
+
 
 root_path = os.path.normpath(os.getcwd() + os.sep + os.pardir) + '/Ontology'
 os.chdir(root_path)
@@ -76,7 +75,6 @@ def recommendPhone(brand, os):
         recommend.append(np.char.split(i, sep='#')[0][1])
 
     recommend = np.asarray(recommend)
-    # print(recommend)
     return recommend
 
 
@@ -98,7 +96,6 @@ def RecommendOnChipset(chipset):
         # print(np.char.split(i, sep = '#'))
 
     recommend = np.asarray(recommend)
-    # print(recommend)
     return recommend
 
 
@@ -130,15 +127,6 @@ def teenPhone(ageGroup):
     counts = np.bincount(pos)
     maxpos = counts.argmax()
 
-    print(brands[maxpos])
     return brands[maxpos]
 
 
-br = 'Motorola'
-oss = 'Oreo'
-# recommendPhone(br, oss)
-# findUsersByPrice(30000)
-chip = 'Qualcomm_SDM845_Snapdragon_845'
-# RecommendOnChipset(chip)
-age = 'Teenagers'
-teenPhone(age)
